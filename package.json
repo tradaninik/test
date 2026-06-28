@@ -1,0 +1,29 @@
+{
+  "name": "metabolic-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal metabolic intelligence platform — diabetes, obesity & preventive health",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "start": "npm run start --workspace apps/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:push": "prisma db push --schema apps/web/prisma/schema.prisma",
+    "db:seed": "npm run db:seed --workspace apps/web",
+    "db:studio": "prisma studio --schema apps/web/prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

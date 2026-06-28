@@ -1,0 +1,25 @@
+{
+  "name": "Metabolic Intelligence",
+  "short_name": "Metabolic",
+  "description": "Personal metabolic intelligence for diabetes, obesity, and preventive health.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0f0d",
+  "theme_color": "#16b077",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

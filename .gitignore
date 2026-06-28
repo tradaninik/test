@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# next
+.next
+out
+build
+dist
+
+# env
+.env
+.env.local
+.env*.local
+
+# db
+*.db
+*.db-journal
+apps/web/prisma/*.db
+apps/web/prisma/*.db-journal
+
+# expo
+.expo
+.expo-shared
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+coverage
+.vscode/*
+!.vscode/extensions.json
+.idea
+nul
